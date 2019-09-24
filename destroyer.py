@@ -1,12 +1,5 @@
 #!/usr/bin/env python
-#Stinger-Tor
-#Coded by @WhitePacket ~ whitepacket.org
-#Function names are written in the order metasploit launches attacks: RECON - EXPLOIT - PAYLOAD - LOOT for entertainment purposes.
-#Requires Socksipy (socks.py) in the current directory. Download it from here: https://raw.githubusercontent.com/mikedougherty/SocksiPy/master/socks.py
-#Donate BTC (nobody ever does): 1MfxuyEFY6StHo3gBPdNyRWGFDMxRutEXp
-#Maybe certain, non-specific illegal Tor servers can be digitally protested using DoS, and no longer exist. That would be really nice.
-#I'm not responsible for any damages or consequences resulting from the use of this script, you are.
-#For legal, research purposes only!
+#Tor-Destroyer
 
 import os, socks, argparse, time, random, re, thread
 
